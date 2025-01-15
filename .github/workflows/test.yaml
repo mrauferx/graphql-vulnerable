@@ -50,7 +50,7 @@ jobs:
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
             --cspm-url https://eu-1.api.cloudsploit.com \
-            --artifact-path "my-image-name:${{ env.tag-version }}" 
+            --artifact-path "docker.io/GITHUB_REPOSITORY:$GITHUB_RUN_NUMBER" 
             # --artifact-path "$GITHUB_REPOSITORY:$GITHUB_RUN_NUMBER" 
 
             # The docker image name:tag of the newly built image
