@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "ASIAZG5Y3JXC5UQKAJ8Y"
-  secret_key = "KsOuKcmeGH95O1zIEFP9TOjhy03yfxreF8gDi7+B"
+  access_key = $tf-access
+  secret_key = $tf-secret
   region     = "us-west-2"
 }
 
